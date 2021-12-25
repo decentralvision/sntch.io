@@ -19,7 +19,9 @@
     "load": "dotenv sourcecred load",
     "develop": "dotenv -- sourcecred go --no-load && sourcecred serve",
     "start": "dotenv -- sourcecred go --no-load && sourcecred serve",
-    "grain": "sourcecred grain"
+    "grain": "sourcecred grain",
+    "heroku-prebuild": "sourcecred load",
+    "heroku-postbuild": "rimraf cache site"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
