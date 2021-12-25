@@ -9,6 +9,10 @@
   "dependencies": {
     "sourcecred": "^0.10.1"
   },
+  "engines": {
+    "node": "14.x",
+    "yarn": "1.x"
+  },
   "scripts": {
     "clean": "rimraf cache site",
     "clean-all": "yarn clean && rimraf output",
