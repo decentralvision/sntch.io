@@ -9,19 +9,12 @@
   "dependencies": {
     "sourcecred": "^0.10.1"
   },
-  "engines": {
-    "node": "14.x",
-    "yarn": "1.x"
-  },
   "scripts": {
     "clean": "rimraf cache site",
     "clean-all": "yarn clean && rimraf output",
     "load": "dotenv sourcecred load",
-    "develop": "dotenv -- sourcecred go --no-load && sourcecred serve",
     "start": "dotenv -- sourcecred go --no-load && sourcecred serve",
-    "grain": "sourcecred grain",
-    "heroku-prebuild": "sourcecred load",
-    "heroku-postbuild": "rimraf cache site"
+    "grain": "sourcecred grain"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
