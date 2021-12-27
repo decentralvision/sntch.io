@@ -1,2 +1,6 @@
-# Page 1
+---
+description: Introduction to SNTCH
+---
+
+# Introduction
 
